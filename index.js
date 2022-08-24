@@ -1,3 +1,4 @@
+const functions = require("firebase-functions");
 const express = require("express");
 const cors = require("cors");
 const User = require("./config");
@@ -83,4 +84,5 @@ app.post("/create", async (req, res) => {
 //   await User.doc(id).delete();
 //   res.send({ msg: "Deleted" });
 // });
-app.listen(4000, () => console.log("Up & RUnning *4000"));
+// app.listen(4000, () => console.log("Up & RUnning *4000"));
+exports.expressApi = functions.https.onRequest(app);

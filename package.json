@@ -1,25 +1,26 @@
 {
-  "dependencies": {
-    "express": "^4.17.3",
-    "firebase": "^8.10.0",
-    "firebase-admin": "^11.0.1"
-  },
-  "name": "apiexpress",
-  "version": "1.0.0",
-  "main": "index.js",
-  "devDependencies": {},
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pradeepodela/expressjs-api-chatbot.git"
+  "engines": {
+    "node": "16"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/pradeepodela/expressjs-api-chatbot/issues"
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "firebase": "^9.9.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
   },
-  "homepage": "https://github.com/pradeepodela/expressjs-api-chatbot#readme",
-  "description": ""
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
 }
