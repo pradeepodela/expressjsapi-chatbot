@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "express": "^4.17.3",
+    "firebase": "^8.10.0",
+    "firebase-admin": "^11.0.1"
+  },
+  "name": "apiexpress",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pradeepodela/expressjs-api-chatbot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pradeepodela/expressjs-api-chatbot/issues"
+  },
+  "homepage": "https://github.com/pradeepodela/expressjs-api-chatbot#readme",
+  "description": ""
+}
